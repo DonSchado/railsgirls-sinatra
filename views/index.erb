@@ -1,3 +1,30 @@
 <h1>Welcome home</h1>
 
 <a href="/hello/Stranger">klick here for some hello</a>
+
+<hr>
+
+<h6>let's iterate over an array:</h6>
+<div class="alert alert-info">
+  <% ["foo", "bar"].each_with_index do |var, i| %>
+    <li><%= "#{i}: #{var}" %></li>
+  <% end %>
+</div>
+
+<hr>
+
+<h6>list the content of a hash:</h6>
+<div class="alert alert-info">
+  <% {a: "foo", b: "bar"}.each do |key, value| %>
+    <li><%= "#{key}: #{value}" %></li>
+  <% end %>
+</div>
+
+<hr>
+
+<h6>print the person object:</h6>
+<div class="alert alert-info">
+  <%= person %>
+</div>
+
+<hr>
